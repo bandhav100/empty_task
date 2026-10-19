@@ -1,0 +1,145 @@
+{
+  "model_version": "v2.0.0-real-ml",
+  "random_seed": 42,
+  "target_definition": "3-month forward rainfall deficit relative to district seasonal normal (Low: <10%, Medium: 10-25%, High: >=25%)",
+  "training_period": "2005-01-01 to 2019-09-01 (embargoed before 2020)",
+  "test_period": "2020-01-01 to 2026-06-01",
+  "train_samples_count": 5478,
+  "test_samples_count": 2574,
+  "test_class_distribution": {
+    "Low": 1609,
+    "Medium": 240,
+    "High": 725
+  },
+  "features_without_oni": [
+    "rain1",
+    "rain3",
+    "rain6",
+    "rain12",
+    "normal_rain3",
+    "recent_deficit",
+    "recent_ratio",
+    "msin",
+    "mcos",
+    "season",
+    "lat",
+    "lon"
+  ],
+  "features_with_oni": [
+    "rain1",
+    "rain3",
+    "rain6",
+    "rain12",
+    "normal_rain3",
+    "recent_deficit",
+    "recent_ratio",
+    "msin",
+    "mcos",
+    "season",
+    "lat",
+    "lon",
+    "oni_now",
+    "oni_prev_3m",
+    "oni_delta"
+  ],
+  "metrics_without_oni": {
+    "macro_f1": 0.3813,
+    "accuracy": 0.42,
+    "per_class": {
+      "Low": {
+        "precision": 0.7511,
+        "recall": 0.3076,
+        "f1": 0.4365
+      },
+      "Medium": {
+        "precision": 0.1187,
+        "recall": 0.375,
+        "f1": 0.1804
+      },
+      "High": {
+        "precision": 0.4287,
+        "recall": 0.6841,
+        "f1": 0.5271
+      }
+    },
+    "confusion_matrix": [
+      [
+        495,
+        567,
+        547
+      ],
+      [
+        36,
+        90,
+        114
+      ],
+      [
+        128,
+        101,
+        496
+      ]
+    ]
+  },
+  "metrics_with_oni": {
+    "macro_f1": 0.4458,
+    "accuracy": 0.5043,
+    "per_class": {
+      "Low": {
+        "precision": 0.8761,
+        "recall": 0.3648,
+        "f1": 0.5151
+      },
+      "Medium": {
+        "precision": 0.1696,
+        "recall": 0.3667,
+        "f1": 0.2319
+      },
+      "High": {
+        "precision": 0.4498,
+        "recall": 0.8593,
+        "f1": 0.5905
+      }
+    },
+    "confusion_matrix": [
+      [
+        587,
+        380,
+        642
+      ],
+      [
+        32,
+        88,
+        120
+      ],
+      [
+        51,
+        51,
+        623
+      ]
+    ]
+  },
+  "macro_f1_difference": 0.0645,
+  "macro_f1_relative_gain_pct": 16.92,
+  "feature_importances": {
+    "oni_delta": 0.1635,
+    "oni_now": 0.1625,
+    "oni_prev_3m": 0.1292,
+    "mcos": 0.1223,
+    "rain6": 0.069,
+    "rain1": 0.0628,
+    "rain3": 0.0471,
+    "normal_rain3": 0.0419,
+    "recent_ratio": 0.0387,
+    "recent_deficit": 0.0377,
+    "season": 0.0375,
+    "rain12": 0.0347,
+    "msin": 0.0193,
+    "lat": 0.0191,
+    "lon": 0.0147
+  },
+  "known_limitations": [
+    "Meteorological rainfall deficit is a proxy for water stress, not a direct sensor of municipal piped supply or borewell drawdown.",
+    "Historical ONI indicates oceanic conditions at the prediction date; it is not a 3-month forecast of future Pacific SST anomalies.",
+    "Feature importance indicates split contribution in decision trees and does not constitute hydrological proof of causation."
+  ]
+}

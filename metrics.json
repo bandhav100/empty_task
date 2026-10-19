@@ -1,0 +1,12 @@
+{
+  "with_elnino": {
+    "accuracy": 0.442,
+    "macro_f1": 0.369
+  },
+  "without_elnino": {
+    "accuracy": 0.37,
+    "macro_f1": 0.26
+  },
+  "baseline_always_low": 0.732,
+  "test_period": "2020 onwards (model trained on data before 2020)"
+}

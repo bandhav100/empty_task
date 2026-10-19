@@ -1,0 +1,20 @@
+# Approximate centre (lat, lon) of each of Telangana's 33 districts
+DISTRICTS = {
+    "Adilabad": (19.67, 78.53), "Bhadradri Kothagudem": (17.55, 80.62),
+    "Hanumakonda": (18.00, 79.58), "Hyderabad": (17.385, 78.487),
+    "Jagtial": (18.79, 78.91), "Jangaon": (17.72, 79.15),
+    "Jayashankar Bhupalpally": (18.43, 79.87), "Jogulamba Gadwal": (16.23, 77.80),
+    "Kamareddy": (18.32, 78.34), "Karimnagar": (18.44, 79.13),
+    "Khammam": (17.25, 80.15), "Kumuram Bheem Asifabad": (19.36, 79.28),
+    "Mahabubabad": (17.60, 80.00), "Mahabubnagar": (16.74, 77.99),
+    "Mancherial": (18.87, 79.46), "Medak": (18.05, 78.26),
+    "Medchal-Malkajgiri": (17.63, 78.48), "Mulugu": (18.19, 79.94),
+    "Nagarkurnool": (16.48, 78.32), "Nalgonda": (17.05, 79.27),
+    "Narayanpet": (16.74, 77.50), "Nirmal": (19.10, 78.34),
+    "Nizamabad": (18.67, 78.09), "Peddapalli": (18.62, 79.37),
+    "Rajanna Sircilla": (18.39, 78.83), "Rangareddy": (17.23, 78.17),
+    "Sangareddy": (17.62, 78.08), "Siddipet": (18.10, 78.85),
+    "Suryapet": (17.14, 79.62), "Vikarabad": (17.34, 77.90),
+    "Wanaparthy": (16.36, 78.06), "Warangal": (17.95, 79.85),
+    "Yadadri Bhuvanagiri": (17.51, 78.89),
+}
