@@ -1,5 +1,6 @@
-# El Niño-Aware Water Stress and Air Quality Advisor for Citizens of Telangana
+# El Niño-Aware Water Stress and Air Quality Advisor for Citizens of Telangana (Research Prototype)
 
+**Status:** Independent Research Prototype (Not an Official Government Portal)  
 **Theme:** Swachh & Sustainable Bharat — Water, Environment & Climate  
 **Target:** Citizens, farmers, and urban residents across all 33 districts of Telangana  
 **Deployment:** Streamlit Community Cloud / Local Python
@@ -8,7 +9,7 @@
 
 ## 🌟 Overview
 
-The **Telangana Water Stress & Air Quality Advisor** is a free, open-access, software-only decision support tool designed to empower citizens of Telangana with actionable intelligence regarding:
+The **Telangana Water Stress & Air Quality Advisor** is an open-access, software-only research and decision-support prototype designed to provide actionable intelligence regarding:
 1. **3-Month Rainfall-Deficit Risk:** An El Niño-aware machine learning model forecasting whether the upcoming season will be among the driest 20% on historical record for each district.
 2. **Real-Time Air Quality Monitoring:** Live US AQI, PM2.5, PM10, and ozone metrics retrieved directly from Open-Meteo with EPA-standard health recommendations.
 3. **CWC River Water Level & Flood Early Warning:** Seamless integration with Central Water Commission (CWC) Flood Forecast System (https://ffs.india-water.gov.in/#/) for Godavari and Krishna river basins.

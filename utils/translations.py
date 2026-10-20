@@ -3,8 +3,8 @@
 TRANSLATIONS = {
     "en": {
         "app_title": "Telangana Water Stress & Air Quality Advisor",
-        "app_subtitle": "Swachh & Sustainable Bharat — El Niño-Aware Citizen Early Warning System",
-        "badge_theme": "Govt. Citizen Advisory • Free & Open-Access",
+        "app_subtitle": "Swachh & Sustainable Bharat — El Niño-Aware Citizen Early Warning System (Prototype)",
+        "badge_theme": "Research Prototype • Free & Open-Access Citizen Advisory",
         "lang_selector_label": "Language / భాష",
         
         # Location & Selection
@@ -112,11 +112,12 @@ TRANSLATIONS = {
         # Disclaimers & Ethics
         "disclaimer_title": "Scientific Transparency, Data Provenance & Privacy",
         "disclaimer_text": (
+            "0. **Research Prototype Notice:** This platform is an independent decision-support prototype and research tool. It is NOT an official portal of the Government of Telangana or affiliated with any government department.\n"
             "1. **Meteorological Proxy, Not Tap Sensor:** 3-month rainfall deficit indicates climatological water stress. It does not directly monitor reservoir gates, municipal pipe pressure, or groundwater bore levels.\n"
             "2. **Correlation vs Causation:** Adding El Niño data improves multi-month prediction accuracy, but does not claim that El Niño alone causes local water shortages.\n"
             "3. **Zero Location Persistence:** Geolocation coordinates are used strictly inside volatile browser session memory for polygon containment. No user coordinates or history are logged or stored.\n"
             "4. **Distinct Air Quality Standards:** US AQI and European AQI are reported using their respective official scales and are not converted to or labeled as CPCB India AQI.\n"
-            "5. **Data Sources:** Open-Meteo Weather & Air Quality APIs | NOAA Climate Prediction Center ONI Index | Government of Telangana Administrative GIS Boundaries."
+            "5. **Data Sources:** Open-Meteo Weather & Air Quality APIs | NOAA Climate Prediction Center ONI Index | Administrative GIS Boundaries."
         ),
         "risk_proxy_disclaimer": (
             "Scientific Notice: This is a meteorological rainfall-deficit risk proxy based on precipitation history "
@@ -152,8 +153,8 @@ TRANSLATIONS = {
     },
     "te": {
         "app_title": "తెలంగాణ నీటి ఒత్తిడి & గాలి నాణ్యత సలహాదారు",
-        "app_subtitle": "స్వచ్ఛ & సుస్థిర భారత్ — ఎల్ నినో ఆధారిత పౌర ముందస్తు హెచ్చరిక వ్యవస్థ",
-        "badge_theme": "ప్రజా ప్రయోజన సలహాదారు • ఉచిత & పారదర్శక సేవ",
+        "app_subtitle": "స్వచ్ఛ & సుస్థిర భారత్ — ఎల్ నినో ఆధారిత పౌర ముందస్తు హెచ్చరిక వ్యవస్థ (ప్రోటోటైప్)",
+        "badge_theme": "పరిశోధన ప్రోటోటైప్ • ఉచిత & పారదర్శక పౌర సేవ",
         "lang_selector_label": "భాష / Language",
         
         # Location & Selection
@@ -258,11 +259,12 @@ TRANSLATIONS = {
         # Disclaimers & Ethics
         "disclaimer_title": "శాస్త్రీయ పారదర్శకత & గోప్యతా విధానం",
         "disclaimer_text": (
+            "0. **పరిశోధన ప్రోటోటైప్ నోటీసు:** ఈ వేదిక స్వతంత్ర పరిశోధన మరియు నిర్ణయ మద్దతు నమూనా (ప్రోటోటైప్). ఇది తెలంగాణ ప్రభుత్వ అధికారిక పోర్టల్ కాదు.\n"
             "1. **ఇది వాతావరణ సూచిక మాత్రమే:** వర్షపాత లోటు అనేది వాతావరణ కరువు సూచిక. ఇది రిజర్వాయర్ల నీరు లేదా భూగర్భ జలాల ప్రత్యక్ష లభ్యతను నేరుగా కొలవదు.\n"
             "2. **ప్రత్యక్ష కారణ సంబంధం ఆపాదించలేము:** ఎల్ నినో డేటా చేర్చడం వల్ల అంచనా ఖచ్చితత్వం పెరుగుతుంది, కానీ ప్రతీ నీటి కొరతకూ ఎల్ నినో ఒక్కటే కారణం అని నిర్ధారించలేము.\n"
             "3. **పూర్తి లొకేషన్ గోప్యత:** మీ బ్రౌజర్ లొకేషన్ మీకు దగ్గరి జిల్లాను గుర్తించడానికి మాత్రమే మెమరీలో తాత్కాలికంగా ఉపయోగపడుతుంది. ఎలాంటి వ్యక్తిగత డేటా నిల్వ చేయబడదు.\n"
             "4. **వేర్వేరు ఎయిర్ క్వాలిటీ ప్రమాణాలు:** US AQI మరియు యూరోపియన్ AQI లు వాటి అధికారిక పద్ధతిలోనే చూపబడుతున్నాయి, వీటిని CPCB ఇండియా AQI గా మార్చలేదు.\n"
-            "5. **అధికారిక వనరులు:** ఓపెన్-మెటియో API | NOAA CPC ONI | తెలంగాణ అధికారిక జియో-స్పేషియల్ సరిహద్దులు."
+            "5. **డేటా వనరులు:** ఓపెన్-మెటియో API | NOAA CPC ONI | అడ్మినిస్ట్రేటివ్ జియో-స్పేషియల్ సరిహద్దులు."
         ),
         "risk_proxy_disclaimer": (
             "శాస్త్రీయ గమనిక: ఇది చారిత్రక వర్షపాతం మరియు సముద్ర-వాతావరణ ధోరణుల ఆధారంగా అంచనా వేసిన వర్షపాత లోటు ప్రమాద సూచిక మాత్రమే. "
@@ -297,8 +299,8 @@ TRANSLATIONS = {
     },
     "hi": {
         "app_title": "तेलंगाना जल संकट एवं वायु गुणवत्ता सलाहकार",
-        "app_subtitle": "स्वच्छ एवं संधारणीय भारत — अल नीनो-जागरूक नागरिक पूर्व चेतावनी प्रणाली",
-        "badge_theme": "शासकीय नागरिक परामर्श • निःशुल्क एवं खुला उपयोग",
+        "app_subtitle": "स्वच्छ एवं संधारणीय भारत — अल नीनो-जागरूक नागरिक पूर्व चेतावनी प्रणाली (प्रोटोटाइप)",
+        "badge_theme": "शोध प्रोटोटाइप • निःशुल्क एवं खुला नागरिक उपयोग",
         "lang_selector_label": "Language / भाषा / భాష",
         
         # Location & Selection
@@ -415,10 +417,11 @@ TRANSLATIONS = {
         # Disclaimers & Ethics
         "disclaimer_title": "वैज्ञानिक पारदर्शिता एवं गोपनीयता नीति",
         "disclaimer_text": (
+            "0. **शोध प्रोटोटाइप सूचना:** यह प्लेटफॉर्म एक स्वतंत्र शोध एवं निर्णय-समर्थन प्रोटोटाइप है। यह तेलंगाना सरकार का आधिकारिक पोर्टल नहीं है।\n"
             "1. **मौसम संबंधी सूचक:** यह वर्षा घाटे का मौसम विज्ञान मॉडल है। यह सीधे भूजल या पाइपलाइन जल आपूर्ति की माप नहीं है।\n"
             "2. **सीधा कारण नहीं:** अल नीनो डेटा मॉडल सटीकता बढ़ाता है, पर हर कमी का एकमात्र कारण नहीं है।\n"
             "3. **स्थान गोपनीयता:** निर्देशांक केवल मेमोरी में उपयोग होते हैं, कभी सहेजे नहीं जाते।\n"
-            "4. **आधिकारिक स्रोत:** Open-Meteo API | NOAA CPC ONI | तेलंगाना आधिकारिक GIS सीमाएं।"
+            "4. **डेटा स्रोत:** Open-Meteo API | NOAA CPC ONI | प्रशासनिक GIS सीमाएं।"
         ),
         "risk_proxy_disclaimer": (
             "वैज्ञानिक सूचना: यह ऐतिहासिक वर्षा एवं समुद्री रुझानों पर आधारित वर्षा-घाटा जोखिम अनुमान है। "

@@ -61,13 +61,10 @@ from utils.water_directory import (
     get_district_infrastructure
 )
 
-LOGO_PATH = Path(__file__).parent / "assets" / "telangana_logo.png"
-LOGO_IMG = str(LOGO_PATH) if LOGO_PATH.exists() else "assets/telangana_logo.png"
-
 # ----------------- PAGE CONFIG -----------------
 st.set_page_config(
-    page_title="Telangana Water & Air Advisor",
-    page_icon=LOGO_IMG if Path(LOGO_IMG).exists() else "💧",
+    page_title="Telangana Water & Air Advisor (Prototype)",
+    page_icon="💧",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -163,23 +160,23 @@ if "selected_district" not in st.session_state:
 
 # ----------------- SIDEBAR CONTROLS -----------------
 with st.sidebar:
-    sb_col1, sb_col2 = st.columns([1, 2.7])
-    with sb_col1:
-        if Path(LOGO_IMG).exists():
-            st.image(LOGO_IMG, width=68)
-        else:
-            st.markdown("🏛️")
-    with sb_col2:
-        st.markdown(
-            """
-            <div style="line-height:1.25; padding-top:6px;">
-                <div style="font-size:0.98rem; font-weight:700; color:var(--text-color, #0f172a); letter-spacing:0.3px;">Govt of Telangana</div>
-                <div style="font-size:0.88rem; font-weight:600; color:#16a34a; margin-top:2px;">తెలంగాణ ప్రభుత్వం</div>
-                <div style="font-size:0.78rem; color:var(--text-color, #64748b); opacity:0.85; margin-top:1px;">तेलंगाना सरकार</div>
+    st.markdown(
+        """
+        <div style="background: linear-gradient(135deg, rgba(2,132,199,0.08), rgba(14,165,233,0.04)); border: 1px solid rgba(2,132,199,0.25); border-radius: 10px; padding: 12px 14px; margin-bottom: 12px;">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <span style="font-size: 1.15rem; font-weight: 700; color: #0284c7;">💧 TG W&AIR</span>
+                <span style="background: #fef3c7; color: #92400e; font-size: 0.68rem; font-weight: 700; padding: 2px 8px; border-radius: 6px; letter-spacing: 0.5px; border: 1px solid #fde68a;">PROTOTYPE</span>
             </div>
-            """,
-            unsafe_allow_html=True
-        )
+            <div style="font-size: 0.8rem; font-weight: 600; color: var(--text-color, #334155); margin-top: 4px;">
+                Water & Air Advisory System
+            </div>
+            <div style="font-size: 0.74rem; color: var(--text-color, #64748b); opacity: 0.85; margin-top: 2px; line-height: 1.3;">
+                Research & Decision-Support Prototype
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
     st.markdown("---")
     st.markdown("### 🌐 Language / భాష / भाषा")
     lang_choice = st.radio(
@@ -282,7 +279,7 @@ with st.sidebar:
 
     st.markdown("---")
     st.markdown(f"**{get_text('badge_theme', lang)}**")
-    st.caption("Theme: Swachh & Sustainable Bharat\n33 Districts Official GIS Boundary Coverage")
+    st.caption("Theme: Swachh & Sustainable Bharat\nResearch Prototype • 33 Districts GIS Boundary Coverage")
 
 # ----------------- LIVE DATA & PREDICTION PIPELINE -----------------
 active_district = st.session_state["selected_district"]
@@ -340,13 +337,12 @@ except Exception as err:
     st.stop()
 
 # ----------------- MAIN TITLE & BRANDING -----------------
-title_col1, title_col2 = st.columns([0.85, 7.15])
-with title_col1:
-    if Path(LOGO_IMG).exists():
-        st.image(LOGO_IMG, width=95)
-with title_col2:
-    st.title(f"💧 {get_text('app_title', lang)}")
-    st.markdown(f"*{get_text('app_subtitle', lang)}*")
+st.title(f"💧 {get_text('app_title', lang)}")
+st.markdown(
+    f"*{get_text('app_subtitle', lang)}* &nbsp;&nbsp;"
+    f"<span style='background:#fef3c7; color:#92400e; font-size:0.75rem; font-weight:700; padding:3px 9px; border-radius:6px; border:1px solid #fde68a; vertical-align:middle;'>RESEARCH PROTOTYPE</span>",
+    unsafe_allow_html=True
+)
 
 # ----------------- NAVIGATION TABS -----------------
 tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
@@ -1411,13 +1407,8 @@ with tab5:
 
 # ================= TAB 6: ABOUT & DISCLAIMERS =================
 with tab6:
-    ab_c1, ab_c2 = st.columns([0.85, 7.15])
-    with ab_c1:
-        if Path(LOGO_IMG).exists():
-            st.image(LOGO_IMG, width=85)
-    with ab_c2:
-        st.subheader(f"ℹ️ {get_text('disclaimer_title', lang)}")
-        st.caption("Official State Portal Advisory • Government of Telangana • Swachh & Sustainable Bharat")
+    st.subheader(f"ℹ️ {get_text('disclaimer_title', lang)}")
+    st.caption("Research & Decision-Support Prototype • Not an Official Government Portal • Swachh & Sustainable Bharat")
     st.markdown(get_text("disclaimer_text", lang))
 
     st.markdown("---")
