@@ -7,7 +7,7 @@
 
 ---
 
-## 🌟 Overview
+## Overview
 
 The **Telangana Water Stress & Air Quality Advisor** is an open-access, software-only research and decision-support prototype designed to provide actionable intelligence regarding:
 1. **3-Month Rainfall-Deficit Risk:** An El Niño-aware machine learning model forecasting whether the upcoming season will be among the driest 20% on historical record for each district.
@@ -19,7 +19,7 @@ The **Telangana Water Stress & Air Quality Advisor** is an open-access, software
 
 ---
 
-## 🏗️ Architecture & Project Structure
+## Architecture & Project Structure
 
 ```
 telangana_advisor/
